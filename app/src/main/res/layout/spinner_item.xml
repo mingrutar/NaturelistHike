@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+          android:layout_margin="@dimen/activity_horizontal_margin"
+          android:id="@+id/spinner_item"
+          android:paddingLeft="@dimen/icon_size"
+          android:paddingStart="@dimen/icon_size"
+          android:paddingTop="@dimen/gap_8dp"
+          android:paddingBottom="@dimen/gap_8dp"
+          android:paddingRight="@dimen/gap_8dp"
+          android:paddingEnd="@dimen/gap_8dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textSize="@dimen/body_text_size"
+          android:textColor="@color/colorPrimaryText" />

@@ -1,0 +1,115 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.coderming.naturalisthike.ui.SetupLoginFragment" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"  >
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/gap_4dp"
+            android:orientation="horizontal">
+            <TextView android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:gravity="right|end"
+                      android:textAppearance="?android:textAppearanceMedium"
+                      android:textStyle="bold"
+                      android:text="Your Email"/>
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_marginLeft="@dimen/gap_9dp"
+                android:layout_marginStart="@dimen/gap_9dp"
+                android:minWidth="@dimen/setup_min_width"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:nextFocusDown="@+id/etpassword"
+                android:hint="@string/email_hint"  />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/gap_4dp"
+            android:orientation="horizontal">
+            <TextView android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:gravity="end"
+                      android:textAppearance="?android:textAppearanceMedium"
+                      android:textStyle="bold"
+                      android:text="Password"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_marginLeft="8dp"
+                android:minWidth="@dimen/setup_min_width"
+                android:minHeight="?android:textAppearanceMedium"
+                android:gravity="left|start"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:id="@+id/et_password"
+                android:nextFocusDown="@+id/et_confirmpw"/>
+        </android.support.v7.widget.LinearLayoutCompat>
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gap_4dp"
+            android:gravity="center"
+            android:visibility="visible"
+            android:orientation="horizontal">
+            <TextView android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:gravity="right|end"
+                      android:textAppearance="?android:textAppearanceMedium"
+                      android:textStyle="bold"
+                      android:text="Confirm PW"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_marginLeft="8dp"
+                android:minWidth="200dp"
+                android:minHeight="?android:textAppearanceMedium"
+                android:gravity="left|start"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:id="@+id/et_confirmpw"
+                android:nextFocusDown="@+id/bt_login"/>
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/gap_8dp"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:elevation="@dimen/gap_4dp"
+                android:id="@+id/bt_login"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:elevation="@dimen/gap_4dp"/>
+        </android.support.v7.widget.LinearLayoutCompat>
+    </LinearLayout>
+</FrameLayout>

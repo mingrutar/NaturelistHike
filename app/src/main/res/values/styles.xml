@@ -1,0 +1,97 @@
+<resources>
+    <style name="BaseRow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/row_minheight</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="MainRow" parent="@style/BaseRow">
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="MainDivider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/gap_2dp</item>
+        <item name="android:layout_marginTop">@dimen/gap_4dp</item>
+        <item name="android:layout_marginBottom">@dimen/gap_8dp</item>
+        <item name="android:background">@color/dark_grey</item>
+    </style>
+
+    <style name="FillSpace">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <!-- Icon -->
+    <style name="MainIcon">
+        <item name="android:layout_width">@dimen/icon_size</item>
+        <item name="android:layout_height">@dimen/icon_size</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:layout_marginRight">@dimen/gap_8dp</item>
+    </style>
+
+    <style name="SmallIcon" parent="MainIcon">
+        <item name="android:layout_width">@dimen/small_icon_size</item>
+    </style>
+
+    <!-- Text -->
+    <style name="BodyTextNL">
+        <item name="android:textColor">@color/colorPrimaryText</item>
+        <item name="android:textSize">@dimen/body_text_size</item>
+        <item name="android:layout_margin">2dp</item>
+    </style>
+    <style name="BodyText" parent="BodyTextNL">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="EmBodyText" parent="BodyText">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="EmBodyTextNL" parent="BodyTextNL">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="SmallTextNL" parent="BodyTextNL">
+        <item name="android:textSize">@dimen/small_text_size</item>
+        <item name="android:textColor">@color/colorSecondaryText</item>
+    </style>
+
+    <style name="SmallText" parent="SmallTextNL">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="SmallUpText" parent="SmallText">
+        <item name="android:layout_gravity">end|top</item>
+    </style>
+    <style name="EmSmallText" parent="SmallText">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="EmSmallTextNL" parent="SmallTextNL">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TinyTextNL" parent="BodyTextNL">
+        <item name="android:textSize">@dimen/tiny_text_size</item>
+    </style>
+    <style name="TinyText" parent="TinyTextNL">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="EmTinyText" parent="TinyText">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="EmTinyTextNL" parent="TinyTextNL">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="FAB">
+        <item name="android:layout_margin">0dp</item>
+        <item name="fabSize">normal</item>
+        <item name="rippleColor">@color/colorPrimaryLight</item>
+        <item name="backgroundTint">@color/colorAccent</item>
+    </style>
+
+</resources>

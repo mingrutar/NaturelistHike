@@ -1,0 +1,58 @@
+<resources xmlns:xliff="http://schemas.android.com/apk/res-auto">
+    <string name="app_name">NaturalistHike</string>
+    <string name="app_label">Naturalist Hike</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_plant_list">Plant List</string>
+    <string name="title_checklist">Checklist</string>
+    <string name="title_activity_carpool">Carpool</string>
+    <string name="title_activity_setup">Setup</string>
+
+    <!-- empty view -->
+    <string name="empty_list_no_trip">No trip is available</string>
+    <string name="empty_list_loading">Loading trips...</string>
+    <string name="empty_list">Plant list is not available.</string>
+    <string name="empty_list_no_network">Trip or plant  list is not available. The network is not available to fetch data.</string>
+    <string name="empty_list_server_down">Trip and plant list is not available. The server is not returning data.</string>
+    <string name="empty_list_server_error">Plant list is not available. The server is not returning valid data. Please check for an updated version.</string>
+    <string name="empty_list_server_invalid">The server is not returning valid data. Please check for an updated version.</string>
+
+    <string name="credit_wildflower">content is copyrighted of http://www.wildflowersearch.org.</string>
+
+    <string name="default_title">Naturalist Hike App</string>
+    <string name="wakeup_time_dialog_title">Set trip day wakeup alarm</string>
+
+    <!-- Date format [CHAR LIMIT=NONE] -->
+    <string name="format_full_friendly_date"><xliff:g id="month">%1$s</xliff:g>, <xliff:g id="day">%2$s</xliff:g></string>
+    <string name="format_temperature"><xliff:g id="temp">%1.0f</xliff:g>\u00B0</string>
+    <!-- Notification Format ?? -->
+    <string name="format_notification">Forecast: <xliff:g id="condition">%1$s</xliff:g> High: <xliff:g id="high">%2$s</xliff:g> Low: <xliff:g id="low">%3$s</xliff:g></string>
+    <string name="notification_title">Hike Reminder</string>
+    <string name="notification_text">View Your Naturalist Hike</string>
+
+    <!-- fr checklist group header -->
+    <string name="checklist_my">My</string>
+    <string name="checklist_leader">Leader\'s</string>
+    <string name="checklist_club">Club\'s</string>
+
+    <string name="label_action">Perform Action</string>
+    <string name="clock_alarm_name">Naturalist Hike</string>
+    <string name="save_personal_info">Save</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_ok">OK</string>
+    <string name="email_hint">nature.lover@gmail.com</string>
+    <string name="title_activity_webview">Web View</string>
+    <string name="menu_start_hike">Start hike</string>
+
+    <string name="home_location">"My home location"</string>
+    <string name="meeting_location">"Trip meeting place"</string>
+    <string name="user_selected_location">"My meeting place"</string>
+    <string name="prompt_weather">Click to view weather details</string>
+    <string name="meet_at">Meet at</string>
+    <string name="trailhead_location">Trail Head</string>
+
+    <string name="set_reminder_dialog_title">Change Trip Reminder Day</string>
+    <string name="set_reminder_dialog_prompt">"Enter reminder days (must be greater than 0:</string>
+    <string name="reminder_toast">"Invalid number."</string>
+    <string name="alarm_toast">Only current trip can chage alarm time</string>
+    <string name="setup_toast">Enter a valid preparation time value</string>
+</resources>

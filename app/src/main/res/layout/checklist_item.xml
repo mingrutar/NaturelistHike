@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_vertical"
+              android:background="@android:color/white"
+              android:padding="@dimen/gap_8dp" >
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="item "
+        android:id="@+id/cb_item"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/colorPrimaryText"/>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:layout_width="@dimen/small_icon_size"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_delete_black_24dp"
+        android:id="@+id/remove"
+        android:tint="@color/pageColorDark"     />
+    <android.support.v7.widget.SwitchCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|right|center_vertical"
+        android:theme="@style/MySwitch"
+        app:switchMinWidth="50dp"
+        app:switchPadding="4dp"
+        app:switchTextAppearance="?android:textAppearanceSmallInverse"
+        android:thumb="@drawable/abc_switch_thumb_material"
+        android:id="@+id/reminder_switch"
+        android:checked="true"
+        android:textOn="y"
+        android:textOff="n"
+        android:text="Remember"
+        android:textColor="@color/colorSecondaryText"
+        app:showText="true"/>
+
+</LinearLayout>

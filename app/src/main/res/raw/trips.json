@@ -1,0 +1,157 @@
+{  "club_check_list": [
+  "Map",
+  "Compass",
+  "Sunglass and sunscreen",
+  "Extra clothing",
+  "Headlamp or flashlight",
+  "Knife",
+  "First-aid suplies",
+  "Firestarter",
+  "Matches",
+  "Extra food and water"
+],
+  "trips": [
+    {"name": "Carkeek Park",
+      "region": "Seattle area",
+      "distance": 3.0,
+      "elevation": 100,
+      "latitude": 47.712161,
+      "logitude": -122.369321,
+      "trip_url": "https://www.mountaineers.org/about/branches-committees/seattle-branch/committees/seattle-naturalists-committee/course-templates/introduction-to-the-natural-world-course/activities/2015-course-archive/field-trip-1-seattle-naturalists-intro-natural-world-course-carkeek-park",
+      "date" : "September 25, 2016",
+      "meeting_place": "Carkeek Park Environmental Learning Center",
+      "mp_latitude" : 47.712161,
+      "mp_longitude" : -122.369321,
+      "meeting_time": "9:30 am",
+      "leader": [
+        {"name": "Lola Kemp", "email": "Lola.Kemp@testmail.com"},
+        {"name": "Ming Rutr", "email": "Ming.Rutr@testmail.com"}
+      ],
+      "participants": [
+        {"name": "MARGARET MOORE", "email": "MARGARET.MOORE@testmail.com"},
+        {"name": "SALLY MURDOCH", "email": "SALLY.MURDOCH@testmail.com"},
+        {"name": "PEGGY MATES", "email": "PEGGY.MATES@testmail.com"},
+        {"name": "PHILLIP SINGER", "email": "PHILLIP.SINGER@testmail.com"},
+        {"name": "NANCY NEWMAN", "email": "NANCY.NEWMAN@testmail.com"},
+        {"name": "DANIELLE GRAHAM", "email": "DANIELLE.GRAHAM@testmail.com"},
+        {"name": "CHRIS BENEDICT", "email": "CHRIS.BENEDICT@testmail.com"},
+        {"name": "GILLIAN DUTTON", "email": "GILLIAN.UTTON@testmail.com"},
+        {"name": "LEAH MILLER", "email": "LEAH.MILLER@testmail.com"},
+        {"name": "", "email": "@testmail.com"},
+        {"name": "", "email": "@testmail.com"},
+        {"name": "", "email": "@testmail.com"}
+      ],
+      "leader_check_list": [
+        {"item": "magnified loop", "required": "no"},
+        {"item": "WPNS plant list", "required": "yes"}
+      ],
+      "leader_plants_list": [
+        "Polystichum munitum | Common sword fern",
+        "Berberis nervosa | Cascade Oregon-Grape",
+        "Rubus spectabilis | Salmonberry",
+        "Lysichiton americanus | Skunk Cabbage",
+        "Dicentra formosa | Western Bleeding Heart",
+        "Ganoderma applanatum | Artist’s Conk",
+        "Blechnum spicant | Deer Fern"
+      ],
+      "leader_other_list": []
+    },
+    {"name": "Esmeralda Basin & Fortune Creek Pass",
+      "region": "Teanaway River area",
+      "date": "September 30, 2016",
+      "distance": "7.1",
+      "elevation" : "1750",
+      "latitude": 47.4361,
+      "logitude": -120.9372,
+      "trip_url": "https://www.mountaineers.org/about/branches-committees/seattle-branch/committees/seattle-naturalists-committee/course-templates/introduction-to-the-natural-world-course/activities/field-trip-3-seattle-naturalists-intro-natural-world-course-esmeralda-basin-fortune-creek-pass-1",
+      "meeting_place": "Greenlake Park & Ride",
+      "mp_latitude": 47.6762957,
+      "mp_longitude": -122.3229763,
+      "meeting_time": "6:30 am",
+      "leader": [
+        {"name": "Stewart Hougen", "email": "Stewart.Hougen@testmail.com"},
+        {"name": "Ming Rutr", "email": "Ming.Rutr@testmail.com"}
+      ],
+      "participants": [
+        {"name": "MARGARET MOORE", "email": "MARGARET.MOORE@testmail.com"},
+        {"name": "SALLY MURDOCH", "email": "SALLY.MURDOCH@testmail.com"},
+        {"name": "PEGGY MATES", "email": "PEGGY.MATES@testmail.com"},
+        {"name": "PHILLIP SINGER", "email": "PHILLIP.SINGER@testmail.com"},
+        {"name": "NANCY NEWMAN", "email": "NANCY.NEWMAN@testmail.com"},
+        {"name": "DANIELLE GRAHAM", "email": "DANIELLE.GRAHAM@testmail.com"},
+        {"name": "CHRIS BENEDICT", "email": "CHRIS.BENEDICT@testmail.com"},
+        {"name": "GILLIAN DUTTON", "email": "GILLIAN.UTTON@testmail.com"},
+        {"name": "LEAH MILLER", "email": "LEAH.MILLER@testmail.com"},
+        {"name": "KRISTA SHULL", "email": "KRISTA.SHULL@testmail.com"},
+        {"name": "ALEXIS HOLLINGSHEAD", "email": "ALEXIS.HOLLINGSHEAD@testmail.com"},
+        {"name": "LAURA MEERKATZ", "email": "LAURA MEERKATZ@testmail.com"}
+      ],
+      "leader_check_list": [
+        {"item": "magnified loop", "required": "no"},
+        {"item": "Pooja book", "required": "yes"}
+      ],
+      "leader_plants_list": [
+        "Primula jeffreyi | Jeffrey’s Shooting Star",
+        "Phlox diffusa | Spreading Phlox",
+        "Pinus ponderosa | Ponderosa Pine",
+        "Amelanchier alnifolia | Western Serviceberry",
+        "Sedum divergens | Spreading Stonecrop",
+        "Alectoria sarmentosa | Common Witch’s Hair",
+        "Picea engelmannii | Engelmann Spruce"
+      ],
+      "leader_other_list": [
+        "Carpenter Ant", "Western Tanager", "Pale Tiger Swallowtail",
+        "Yellow-rumped Warbler", "Golden-mantled Ground Squirrel"
+      ]
+
+    },
+    {"name": "Spray Park",
+      "region": "Mt Rainier",
+      "distance": "6.0",
+      "elevation": "2200",
+      "latitude": 46.9331,
+      "logitude": -121.8643,
+      "trip_url": "https://www.mountaineers.org/about/branches-committees/seattle-branch/committees/seattle-naturalists-committee/course-templates/introduction-to-the-natural-world-course/activities/2015-course-archive/field-trip-4-seattle-naturalists-intro-natural-world-course-spray-park",
+      "date": "October 10, 2016",
+      "meeting_place": "Mowich Lake/Campground parking lot",
+      "mp_latitude": 46.9375438,
+      "mp_longitude": -121.8707396,
+      "meeting_time": "8:30 am",
+      "leader": [
+        {"name": "Kay English", "email": "Kay.English@testmail.com"},
+        {"name": "Ming Rutr", "email": "Ming.Rutr@testmail.com"}
+      ],
+      "participants": [
+        {"name": "MARGARET MOORE", "email": "MARGARET.MOORE@testmail.com"},
+        {"name": "SALLY MURDOCH", "email": "SALLY.MURDOCH@testmail.com"},
+        {"name": "LONNIE MARTIN", "email": "LONNIE.MARTIN@testmail.com"},
+        {"name": "PHILLIP SINGER", "email": "PHILLIP.SINGER@testmail.com"},
+        {"name": "NANCY NEWMAN", "email": "NANCY.NEWMAN@testmail.com"},
+        {"name": "MARIAN O'BRIEN", "email": "MARIAN.O.BRIEN@testmail.com"},
+        {"name": "CHRIS BENEDICT", "email": "CHRIS.BENEDICT@testmail.com"},
+        {"name": "CATHA COWGILL", "email": "CATHA.COWGILL@testmail.com"},
+        {"name": "LEAH MILLER", "email": "LEAH.MILLER@testmail.com"},
+        {"name": "KRISTA SHULL", "email": "KRISTA.SHULL@testmail.com"},
+        {"name": "ALEXIS HOLLINGSHEAD", "email": "ALEXIS.HOLLINGSHEAD@testmail.com"},
+        {"name": "LAURA MEERKATZ", "email": "LAURA MEERKATZ@testmail.com"}
+      ],
+      "leader_check_list": [
+        {"item": "magnified loop", "required": "no"},
+        {"item": "WPNS plant list", "required": "yes"}
+      ],
+      "leader_plants_list": [
+        "Lupinus latifolius | Broad-leaf Lupine",
+        "castilleja miniata | Common Paintbrush",
+        "Xerophyllum tenax | Beargrass",
+        "Aquilegia formosa | Red Columbine",
+        "Erythronium grandiflorum | Glacier Lily",
+        "Lilium columbianum | Tiger Lily",
+        "Vaccinium membranaceum | Thinleaf Blueberry",
+        "Sorbus sitchensis | Sitka Mountain Ash",
+        "Alnus viridis | Sitka Alder",
+        "Callitropsis nootkatensis | Alaska Yellow-cedar"
+      ],
+      "leader_other_list": ["Gray Jay", "Blue (Butterfly)"]
+    }
+  ]
+}

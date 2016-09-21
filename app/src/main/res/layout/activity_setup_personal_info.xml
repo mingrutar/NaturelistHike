@@ -1,0 +1,92 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/gap_8dp"
+    android:paddingLeft="@dimen/gap_8dp"
+    android:paddingRight="@dimen/gap_8dp"
+    android:paddingTop="@dimen/gap_8dp"
+    android:orientation="vertical"
+    tools:context=".ui.SetupPersonalInfoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/min_edit_height"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:hint="Enter preparation time, default 45 min"
+            android:inputType="number"
+            android:nextFocusDown="@+id/et_remind_day"
+            android:id="@+id/et_prep_time" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/gap_4dp"
+            android:layout_marginStart="@dimen/gap_4dp"
+            android:text="minutes"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/min_edit_height"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:inputType="number"
+            android:hint="Enter reminder days, default i day earlier"
+            android:nextFocusDown="@+id/save"
+            android:id="@+id/et_remind_day" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/gap_4dp"
+            android:layout_marginStart="@dimen/gap_4dp"
+            android:text="days"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/gap_8dp"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:text="Tap your home location on the map"
+        android:textColor="@color/colorPrimaryText" />
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/map"
+        class="com.google.android.gms.maps.SupportMapFragment"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|center_horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_personal_ok"
+            android:enabled="false"
+            android:textAppearance="?android:textAppearanceMediumInverse"
+            android:background="@color/colorPrimary"
+            android:text="Next"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/gap_8dp"
+            android:layout_marginStart="@dimen/gap_8dp"
+            android:textAppearance="?android:textAppearanceMediumInverse"
+            android:id="@+id/bt_personal_cancel"
+            android:text="Cancel"/>
+    </LinearLayout>
+</LinearLayout>

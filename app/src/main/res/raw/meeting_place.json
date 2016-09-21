@@ -1,0 +1,13 @@
+[{"county" : "King", "city" : "Seattle", "name" : "Greenlake Park & Ride",
+  "address" : "6601 Eighth Ave. NE", "latitude" : 47.6762957, "longitude" : -122.3229763 },
+  {"county" : "King", "city" : "Bellevue", "name" : "SE Eastgate Way & 141st Ave. - 14200 SE Eastgate Way",
+    "address" : "Eastgate Park & Ride", "latitude" : 47.580557, "longitude" : -122.154842 },
+  {"county" : "King", "city" : "Bothell", "name" : "Brickyard Road",
+    "address" : "15530 Juanita-Woodinville Way NE", "latitude" : 47.7521114, "longitude" : -122.1814912  },
+  {"county" : "King", "city" : "Issaquah", "name" : "Tibbetts Valley Park Park & Ride",
+    "address" : "965 12th Ave. NW", "latitude" : 47.5402596, "longitude" : -122.0639768 },
+  {"county" : "Snohomish ", "city" : "Lynnwood", "name" : "Ash Way Park & Ride",
+    "address" : "16327 Ash Way", "latitude" : 47.8527899, "longitude" : -122.2617477 },
+  {"county" : "Snohomish ", "city" : "Sultan", "name" : "Sultan Park & Ride",
+    "address" : "Hwy 2 &amp; 10th St.", "latitude" : 47.8631569, "longitude" : -121.8050012 }
+]

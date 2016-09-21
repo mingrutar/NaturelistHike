@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.coderming.naturalisthike"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- To access Google+ APIs: -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key"/>
+        <activity
+            android:name=".ui.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.PlantListActivity"
+            android:label="@string/title_activity_plant_list"
+            android:parentActivityName=".ui.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.coderming.naturalisthike.ui.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".ui.ChecklistActivity"
+            android:label="@string/title_checklist"
+            android:parentActivityName=".ui.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.coderming.naturalisthike.ui.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".ui.CarpoolActivity"
+            android:label="@string/title_activity_carpool"
+            android:parentActivityName=".ui.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.coderming.naturalisthike.ui.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".chrome_tab.WebviewActivity"
+            android:label="@string/title_activity_webview"
+            android:parentActivityName=".ui.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.MainActivity"/>
+        </activity>
+
+        <!-- Content Providers -->
+        <provider
+            android:name=".data.PlantContentProvider"
+            android:authorities="com.coderming.naturalisthike.plantlist"
+            android:enabled="true"
+            android:exported="false">
+        </provider>
+        <provider
+            android:name=".data.TripContentProvider"
+            android:authorities="com.coderming.naturalisthike.trip"
+            android:enabled="true"
+            android:exported="false">
+        </provider>
+
+        <receiver
+            android:name=".service.MyBroadcastReceiver"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.coderming.naturalisthike"/>
+                <!--
+                     AlarmReminder has it, not sure we need it
+
+                                <data android:scheme="reminder"/>
+                                <data android:host="com.coderming.naturalisthike"/>
+                                <data android:pathPattern=".*"/>
+                -->
+            </intent-filter>
+        </receiver>
+
+
+        <service
+            android:name=".service.DataRetrieverService"
+            android:exported="false">
+        </service>
+
+        <activity android:name=".ui.SetupPersonalInfoActivity"
+            android:parentActivityName=".ui.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.MainActivity"/>
+        </activity>
+        <activity android:name=".TestActivity">
+        </activity>
+    </application>
+</manifest>
