@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:minHeight="@dimen/min_edit_height"
             android:textAppearance="?android:textAppearanceMedium"
-            android:hint="Enter preparation time, default 45 min"
+            android:hint="@string/enter_preparation_time_default_45_min"
             android:inputType="number"
             android:nextFocusDown="@+id/et_remind_day"
             android:id="@+id/et_prep_time" />
@@ -29,7 +29,8 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/gap_4dp"
             android:layout_marginStart="@dimen/gap_4dp"
-            android:text="minutes"/>
+            android:contentDescription="@string/cd_in_minutes"
+            android:text="@string/minutes"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -43,7 +44,7 @@
             android:minHeight="@dimen/min_edit_height"
             android:textAppearance="?android:textAppearanceMedium"
             android:inputType="number"
-            android:hint="Enter reminder days, default i day earlier"
+            android:hint="@string/enter_reminder_days_default_i_day_earlier"
             android:nextFocusDown="@+id/save"
             android:id="@+id/et_remind_day" />
         <TextView
@@ -51,7 +52,8 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/gap_4dp"
             android:layout_marginStart="@dimen/gap_4dp"
-            android:text="days"/>
+            android:contentDescription="@string/cd_in_days"
+            android:text="@string/days"/>
     </LinearLayout>
     <TextView
         android:layout_width="match_parent"
@@ -59,13 +61,15 @@
         android:layout_marginBottom="@dimen/gap_8dp"
         android:layout_marginTop="@dimen/activity_vertical_margin"
         android:textAppearance="?android:textAppearanceMedium"
-        android:text="Tap your home location on the map"
+        android:text="@string/tap_your_home_location_on_the_map"
+        android:contentDescription="@string/tap_your_home_location_on_the_map"
         android:textColor="@color/colorPrimaryText" />
     <fragment
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:id="@+id/map"
+        android:contentDescription="@string/google_map"
         class="com.google.android.gms.maps.SupportMapFragment"/>
     <LinearLayout
         android:layout_width="match_parent"
@@ -75,18 +79,22 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            style="?android:attr/buttonBarButtonStyle"
             android:id="@+id/bt_personal_ok"
             android:enabled="false"
             android:textAppearance="?android:textAppearanceMediumInverse"
             android:background="@color/colorPrimary"
-            android:text="Next"/>
+            android:contentDescription="@string/next"
+            android:text="@string/next"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_marginLeft="@dimen/gap_8dp"
             android:layout_marginStart="@dimen/gap_8dp"
             android:textAppearance="?android:textAppearanceMediumInverse"
             android:id="@+id/bt_personal_cancel"
-            android:text="Cancel"/>
+            android:contentDescription="@string/cancel"
+            android:text="@string/cancel"/>
     </LinearLayout>
 </LinearLayout>

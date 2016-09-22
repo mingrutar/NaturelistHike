@@ -27,6 +27,7 @@
         android:id="@+id/checklist_ExpListView"
         android:layout_marginLeft="@dimen/gap_2dp"
         android:layout_marginRight="@dimen/gap_2dp"
+        android:contentDescription="@string/checklists"
         android:groupIndicator="@drawable/group_indicator"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         android:headerDividersEnabled="true"/>

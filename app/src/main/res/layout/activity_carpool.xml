@@ -41,6 +41,7 @@
                 android:layout_marginTop="@dimen/gap_8dp"
                 android:layout_marginLeft="@dimen/activity_horizontal_margin"
                 android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:contentDescription="@string/meeting_place_options"
                 android:background="@color/trans_white"
                 style="@android:style/Widget.Spinner"
                 android:spinnerMode="dropdown"
@@ -55,6 +56,7 @@
             android:paddingLeft="@dimen/activity_horizontal_margin"
             android:paddingRight="@dimen/activity_horizontal_margin"
             android:orientation="horizontal"
+            android:contentDescription="@string/meeting_time"
             android:background="@color/trans_grey"
             android:gravity="center_horizontal">
             <TextView   style="@style/SmallText"

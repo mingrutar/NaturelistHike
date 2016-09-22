@@ -28,6 +28,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/plant_list_container"
+        android:contentDescription="@string/cd_plant_list"
         tools:context="com.coderming.movieapp.DetailActivity" />
 
     <android.support.design.widget.FloatingActionButton

@@ -20,55 +20,66 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_centerVertical="true"
+            android:contentDescription="@string/cd_hike_icon"
             android:src="@drawable/hiking"  />
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:id="@+id/mileage_elevation"
+            android:layout_toEndOf="@id/icon_hiker"
             android:layout_toRightOf="@id/icon_hiker"
             android:orientation="horizontal">
             <TextView style="@style/EmBodyText"
                       android:id="@+id/mileage"
-                      android:text="7"/>
-            <TextView style="@style/SmallText"
-                      android:text="miles"/>
+                      android:contentDescription="@string/cd_trip_miles" />
+            <TextView
+                style="@style/SmallText"
+                android:text="@string/miles"
+                android:contentDescription="@string/miles"/>
             <View
                 android:layout_width="@dimen/gap_8dp"
                 android:layout_height="match_parent" />
             <TextView style="@style/EmBodyText"
                       android:id="@+id/elevation"
-                      android:text="1327"/>
+                      android:contentDescription="@string/trip_elevation" />
             <TextView style="@style/SmallText"
-                      android:text="ft"/>
+                      android:text="@string/ft"
+                android:contentDescription="@string/ft"/>
         </LinearLayout>
         <TextView style="@style/EmSmallText"
                   android:id="@+id/hike_date"
+                  android:layout_toEndOf="@id/icon_hiker"
                   android:layout_toRightOf="@id/icon_hiker"
                   android:layout_below="@+id/mileage_elevation"
-                  android:text="Jun 25"/>
+                  android:contentDescription="@string/cd_hike_date" />
     </RelativeLayout>
     <View style="@style/MainDivider" />
 
     <LinearLayout  android:id="@+id/ll_plant_list"
                    xmlns:android="http://schemas.android.com/apk/res/android"
                    style="@style/MainRow" >
-        <android.support.v7.widget.AppCompatImageView style="@style/MainIcon"
-                                                      android:src="@drawable/ic_plant_24dp"/>
+        <android.support.v7.widget.AppCompatImageView
+            style="@style/MainIcon"
+            android:contentDescription="@string/cd_plant_list_icon"
+            android:src="@drawable/ic_plant_24dp"/>
         <TextView style="@style/EmBodyText"
-                  android:text="Plant List"/>
+                  android:contentDescription="@string/plant_list"
+                  android:text="@string/plant_list"/>
         <FrameLayout
             android:layout_width="0dp"
             android:layout_height="@dimen/icon_size"
             android:layout_weight="1"
             android:visibility="invisible"
             android:gravity="end|center_vertical">
-            <android.support.v7.widget.AppCompatImageView style="@style/SmallIcon"
-                                                          android:src="@drawable/ic_leader_24dp"
-                                                          android:layout_gravity="end|center_vertical" />
+            <android.support.v7.widget.AppCompatImageView
+                style="@style/SmallIcon"
+                android:src="@drawable/ic_leader_24dp"
+                android:contentDescription="@string/cd_plant_list_of_leader"
+                android:layout_gravity="end|center_vertical" />
             <TextView style="@style/SmallUpText"
                       android:id="@+id/num_leader_favor"
-                      android:text="12"     />
+                      android:contentDescription="@string/cd_number_of_leader_list" />
         </FrameLayout>
         <FrameLayout
             android:layout_width="@dimen/icon_size"
@@ -76,14 +87,15 @@
             android:layout_marginLeft="@dimen/gap_8dp"
             android:visibility="invisible"
             android:layout_marginStart="@dimen/gap_8dp" >
-            <android.support.v7.widget.AppCompatImageView style="@style/SmallIcon"
-                                                          android:src="@drawable/ic_favorite_24dp"
-                                                          android:layout_gravity="center_vertical" />
+            <android.support.v7.widget.AppCompatImageView
+                style="@style/SmallIcon"
+                android:src="@drawable/ic_favorite_24dp"
+                android:contentDescription="@string/cd_my_favority_plants"
+                android:layout_gravity="center_vertical" />
             <TextView style="@style/SmallUpText"
                       android:id="@+id/num_my_favor"
-                      android:text="6"     />
+                      android:contentDescription="@string/cd_number_of_my_favority_plants" />
         </FrameLayout>
-
     </LinearLayout>
     <View style="@style/MainDivider" />
 
@@ -95,65 +107,53 @@
             android:layout_alignParentStart="true"
             android:layout_centerVertical="true"
             android:id="@+id/icon_carpooling"
+            android:contentDescription="@string/cd_meeting_place_icon"
             android:src="@drawable/ic_carpooling_24dp"/>
-        <FrameLayout
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/icon_size"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:visibility="invisible"
-            android:gravity="end|center_vertical">
-            <android.support.v7.widget.AppCompatImageView
-                style="@style/SmallIcon"
-                android:src="@drawable/ic_people_24dp" />
-            <TextView style="@style/SmallUpText"
-                      android:id="@+id/num_car_mate"
-                      android:text="4"     />
-        </FrameLayout>
         <TextView style="@style/SmallText"
                   android:layout_alignParentTop="true"
                   android:layout_toRightOf="@id/icon_carpooling"
+                  android:layout_toEndOf="@id/icon_carpooling"
                   android:id="@+id/meet_at"
                   android:paddingTop="@dimen/gap_4dp"
+                  android:contentDescription="@string/meet_at"
                   android:text="@string/meet_at"/>
         <TextView style="@style/EmBodyText"
                   android:layout_alignParentTop="true"
                   android:layout_toRightOf="@id/meet_at"
+                  android:layout_toEndOf="@id/meet_at"
                   android:id="@+id/meeting_time"
-                  android:text="6:30 AM"/>
+                  android:contentDescription="@string/cd_meeting_time" />
         <TextView style="@style/EmSmallText"
                   android:layout_alignParentTop="true"
                   android:layout_toRightOf="@id/meeting_time"
+                  android:layout_toEndOf="@id/meeting_time"
                   android:id="@+id/at_trail_head"
                   android:paddingTop="@dimen/gap_4dp"
-                  android:text="10:30 am at TH"/>
+                  android:contentDescription="@string/cd_meeting_place" />
         <TextView style="@style/EmSmallText"
                   android:layout_toRightOf="@id/icon_carpooling"
+                  android:layout_toEndOf="@id/icon_carpooling"
                   android:layout_below="@+id/meet_at"
                   android:id="@+id/meeting_place"
-                  android:text="Green lake  PnR"/>
+                  android:contentDescription="@string/cd_meet_place_data" />
     </RelativeLayout>
     <View style="@style/MainDivider" />
 
     <LinearLayout android:id="@+id/ll_checklist"
                   style="@style/MainRow"   >
 
-        <android.support.v7.widget.AppCompatImageView style="@style/MainIcon"
-                                                      android:rotation="-45"
-                                                      android:src="@drawable/ic_checklist_24dp"/>
+        <android.support.v7.widget.AppCompatImageView
+            style="@style/MainIcon"
+            android:rotation="-45"
+            android:contentDescription="@string/cd_checklist_icon2"
+            android:src="@drawable/ic_checklist_24dp"/>
         <TextView style="@style/BodyText"
-                  android:text="Review"/>
+                  android:contentDescription="@string/cd_review"
+                  android:text="@string/cd_review"/>
         <TextView style="@style/EmBodyText"
-                  android:text="Check List"/>
-
+                  android:contentDescription="@string/cd_check_list"
+                  android:text="@string/cd_check_list" />
         <View style="@style/FillSpace" />
-        <TextView style="@style/EmBodyText"
-                  android:id="@+id/num_todos"
-                  android:visibility="invisible"
-                  android:text="3"/>
-        <TextView style="@style/SmallText"
-                  android:visibility="invisible"
-                  android:text="remain"/>
     </LinearLayout>
     <View style="@style/MainDivider" />
     <LinearLayout style="@style/MainRow" >
@@ -168,25 +168,32 @@
                 android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
                 android:id="@+id/icon_reminder"
+                android:contentDescription="@string/cd_reminder_icon"
                 android:src="@drawable/ic_reminder_24dp"/>
             <LinearLayout style="@style/MainRow"
                           android:id="@+id/reminder_inner"
                           android:layout_toRightOf="@+id/icon_reminder"
+                          android:layout_toEndOf="@+id/icon_reminder"
                           android:orientation="horizontal">
                 <TextView style="@style/BodyText"
-                          android:text="Remind me "/>
+                          android:contentDescription="@string/remind_me"
+                          android:text="@string/remind_me"/>
                 <TextView style="@style/EmBodyText"
+                          android:contentDescription="@string/rcd_eminder_with_day"
                           android:id="@+id/reminder_time" />
                 <TextView android:layout_width="0dp"
                           android:layout_weight="1"
                           android:layout_height="wrap_content"
                           style="@style/BodyTextNL"
-                          android:text =" earlier"/>
+                          android:contentDescription="@string/earlier"
+                          android:text ="@string/earlier"/>
             </LinearLayout>
             <TextView
                 android:layout_toRightOf="@+id/icon_reminder"
+                android:layout_toEndOf="@+id/icon_reminder"
                 android:layout_centerVertical="true"
-                android:text="Reminder is disabled"
+                android:contentDescription="@string/reminder_is_disabled"
+                android:text="@string/reminder_is_disabled"
                 style="@style/BodyText"
                 android:visibility="invisible"
                 android:id="@+id/disable_reminder"/>
@@ -194,7 +201,7 @@
         <android.support.v7.widget.SwitchCompat
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="end|right|center_vertical"
+            android:layout_gravity="end|center_vertical"
             android:theme="@style/MySwitch"
             app:switchMinWidth="@dimen/switch_width"
             app:switchPadding="@dimen/gap_4dp"
@@ -206,6 +213,7 @@
             android:textOff="off"
             android:text=""
             android:textColor="@color/trans_grey"
+            android:contentDescription="@string/cd_enable_or_disable_reminder"
             app:showText="false"/>
     </LinearLayout>
     <View style="@style/MainDivider" />
@@ -228,30 +236,34 @@
                           android:layout_alignParentTop="true"
                           android:layout_alignParentLeft="true"
                           android:layout_alignParentStart="true"
-                          android:text="Wake me up at "/>
+                          android:contentDescription="@string/cd_wake_me_up_at"
+                          android:text="@string/cd_wake_me_up_at"/>
                 <TextView android:layout_width="wrap_content"
                           android:layout_height="wrap_content"
                           android:layout_toRightOf="@+id/tv_alarm"
+                          android:layout_toEndOf="@+id/tv_alarm"
                           android:layout_alignParentTop="true"
                           style="@style/EmBodyTextNL"
                           android:id="@+id/alarm_time"
-                          android:text="6 am"/>
+                          android:contentDescription="@string/cd_alarm_time" />
                 <TextView android:id="@+id/driving_time"
                           style="@style/EmSmallText"
                           android:layout_below="@+id/tv_alarm"
                           android:layout_alignParentLeft="true"
                           android:layout_alignParentStart="true"
-                          android:text="23 min to the meeting place." />
+                          android:contentDescription="@string/cd_time_to_meeting_place" />
             </RelativeLayout>
             <TextView
                 style="@style/BodyText"
                 android:visibility="invisible"
+                android:contentDescription="@string/alarm_is_disabled"
+                android:text="@string/alarm_is_disabled"
                 android:id="@+id/disable_alarm"/>
         </FrameLayout>
         <android.support.v7.widget.SwitchCompat
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="end|right|center_vertical"
+            android:layout_gravity="end|center_vertical"
             android:theme="@style/MySwitch"
             app:switchMinWidth="@dimen/switch_width"
             app:switchPadding="@dimen/gap_4dp"
@@ -263,6 +275,7 @@
             android:textOff="off"
             android:text=""
             android:textColor="@color/trans_grey"
+            android:contentDescription="@string/cd_enable_and_disanle_alarm"
             app:showText="false"/>
     </LinearLayout>
     <View style="@style/MainDivider" />
@@ -271,10 +284,13 @@
                    style="@style/MainRow"
                    android:id="@+id/ll_weather_segment">
 
-        <android.support.v7.widget.AppCompatImageView style="@style/MainIcon"
-                                                      android:id="@+id/weather_icon"
-                                                      android:src="@drawable/ic_weather_clear_24dp"/>
+        <android.support.v7.widget.AppCompatImageView
+            style="@style/MainIcon"
+            android:id="@+id/weather_icon"
+            android:contentDescription="@string/cd_weather_icon"
+            android:src="@drawable/ic_weather_clear_24dp"/>
         <TextView style="@style/BodyText"
+                  android:contentDescription="@string/prompt_weather"
                   android:text="@string/prompt_weather"/>
     </LinearLayout>
     <View style="@style/MainDivider"
