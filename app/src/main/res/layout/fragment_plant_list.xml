@@ -22,6 +22,7 @@
             android:layout_weight="1"
             android:clipToPadding="false"
             android:scrollbars="vertical"
+            android:contentDescription="@string/plant_list"
             android:scrollbarStyle="outsideOverlay" />
         <TextView
             android:layout_width="wrap_content"
@@ -29,6 +30,7 @@
             android:layout_gravity="bottom|center_horizontal"
             android:textAppearance="?android:textAppearanceSmallInverse"
             android:id="@+id/wfs_credit"
+            android:contentDescription="@string/cd_copy_rights"
             android:text="@string/credit_wildflower" />
     </LinearLayout>
     <TextView
@@ -38,5 +40,6 @@
         android:gravity="center_vertical"
         android:textAppearance="?titleTextAppearance"
         android:padding="@dimen/activity_vertical_margin"
+        android:contentDescription="@string/empty_list"
         android:text="@string/empty_list" />
 </FrameLayout>

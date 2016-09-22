@@ -106,4 +106,19 @@
     <string name="alarm_is_disabled">Alarm is disabled</string>
     <string name="cd_enable_and_disanle_alarm">enable and disanle alarm</string>
     <string name="cd_weather_icon">weather icon</string>
+    <string name="cd_copy_rights">copy rights</string>
+    <string name="your_email">Your Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_pw">Confirm PW</string>
+    <string name="cd_confirm_password">confirm password</string>
+    <string name="cd_confirm_password_input">confirm password input</string>
+    <string name="login">Login</string>
+    <string name="plant_image">plant image</string>
+    <string name="cd_observed">observed</string>
+    <string name="i_ve_observed_the_plant">I\'ve observed the plant</string>
+    <string name="common_name">common name</string>
+    <string name="cd_scientific_name">scientific name</string>
+    <string name="cd_family_name">family name</string>
+    <string name="cd_favorite_icon">favorite icon</string>
+    <string name="meeting_place_option">meeting place option</string>
 </resources>

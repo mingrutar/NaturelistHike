@@ -21,6 +21,7 @@
             android:scaleType="centerCrop"
             android:adjustViewBounds="true"
             android:id="@+id/plant_image"
+            android:contentDescription="@string/plant_image"
             android:src="@drawable/not_available" />
         <android.support.v7.widget.AppCompatImageView
             android:layout_width="@dimen/icon_size"
@@ -28,10 +29,11 @@
             android:scaleType="centerCrop"
             android:adjustViewBounds="true"
             android:id="@+id/observed"
-            android:layout_gravity="top|start|left"
+            android:layout_gravity="top|start"
             android:foreground="@color/trans_light"
             android:visibility="invisible"
             android:src="@drawable/ic_cl_me_24dp"
+            android:contentDescription="@string/cd_observed"
             android:tint="@color/colorAccent2"/>
         <android.support.v7.widget.AppCompatImageView
             android:layout_width="@dimen/icon_size"
@@ -39,8 +41,9 @@
             android:scaleType="centerCrop"
             android:adjustViewBounds="true"
             android:id="@+id/observe"
-            android:layout_gravity="top|start|left"
+            android:layout_gravity="top|start"
             android:foreground="@color/trans_light"
+            android:contentDescription="@string/i_ve_observed_the_plant"
             android:src="@drawable/ic_observe_24dp" />
     </FrameLayout>
     <LinearLayout
@@ -55,13 +58,13 @@
             android:id="@+id/plant_common_name"
             style="@style/EmSmallText"
             android:textColor="@color/colorPrimaryText"
-            android:text="Pointedtip Mariposa Lily 1233456"/>
+            android:contentDescription="@string/common_name" />
         <TextView
             android:id="@+id/plant_scientific_name"
             style="@style/SmallText"
             android:textColor="@color/light_black"
             android:paddingBottom="@dimen/gap_4dp"
-            android:text="Apiculatus"/>
+            android:contentDescription="@string/cd_scientific_name" />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -73,11 +76,12 @@
                       android:textSize="@dimen/small_text_size"
                       android:layout_height="wrap_content"
                       android:id="@+id/family_name"
-                      android:text="Familyceae" />
+                        android:contentDescription="@string/cd_family_name" />
             <android.support.v7.widget.AppCompatImageView
                 style="@style/SmallIcon"
                 android:id="@+id/is_favorite"
                 android:src="@drawable/ic_favorite_24dp"
+                android:contentDescription="@string/cd_favorite_icon"
                 android:tint="@color/colorAccent" />
         </LinearLayout>
     </LinearLayout>

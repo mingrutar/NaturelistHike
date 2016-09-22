@@ -11,4 +11,5 @@
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
           android:textSize="@dimen/body_text_size"
+          android:contentDescription="@string/meeting_place_option"
           android:textColor="@color/colorPrimaryText" />

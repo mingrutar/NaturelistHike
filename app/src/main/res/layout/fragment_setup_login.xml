@@ -26,7 +26,8 @@
                       android:gravity="right|end"
                       android:textAppearance="?android:textAppearanceMedium"
                       android:textStyle="bold"
-                      android:text="Your Email"/>
+                      android:contentDescription="@string/your_email"
+                      android:text="@string/your_email"/>
             <EditText
                 android:id="@+id/et_email"
                 android:layout_width="0dp"
@@ -53,17 +54,19 @@
                       android:gravity="end"
                       android:textAppearance="?android:textAppearanceMedium"
                       android:textStyle="bold"
-                      android:text="Password"/>
+                      android:contentDescription="@string/password"
+                      android:text="@string/password"/>
             <EditText
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
-                android:layout_marginLeft="8dp"
+                android:layout_marginLeft="@dimen/gap_8dp"
+                android:layout_marginStart="@dimen/gap_8dp"
                 android:minWidth="@dimen/setup_min_width"
                 android:minHeight="?android:textAppearanceMedium"
-                android:gravity="left|start"
+                android:gravity="start"
                 android:textAppearance="?android:textAppearanceMedium"
-                android:id="@+id/et_password"
+                android:id="@+id/et_secret"
                 android:nextFocusDown="@+id/et_confirmpw"/>
         </android.support.v7.widget.LinearLayoutCompat>
         <android.support.v7.widget.LinearLayoutCompat
@@ -76,20 +79,23 @@
             <TextView android:layout_width="0dp"
                       android:layout_height="wrap_content"
                       android:layout_weight="1"
-                      android:gravity="right|end"
+                      android:gravity="end"
                       android:textAppearance="?android:textAppearanceMedium"
                       android:textStyle="bold"
-                      android:text="Confirm PW"/>
+                      android:contentDescription="@string/cd_confirm_password"
+                      android:text="@string/confirm_pw"/>
             <EditText
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
-                android:layout_marginLeft="8dp"
+                android:layout_marginLeft="@dimen/gap_8dp"
+                android:layout_marginStart="@dimen/gap_8dp"
                 android:minWidth="200dp"
                 android:minHeight="?android:textAppearanceMedium"
-                android:gravity="left|start"
+                android:gravity="start"
                 android:textAppearance="?android:textAppearanceMedium"
                 android:id="@+id/et_confirmpw"
+                android:contentDescription="@string/cd_confirm_password_input"
                 android:nextFocusDown="@+id/bt_login"/>
         </android.support.v7.widget.LinearLayoutCompat>
 
@@ -102,14 +108,13 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Login"
-                android:elevation="@dimen/gap_4dp"
+                android:text="@string/login"
+                android:contentDescription="@string/login"
                 android:id="@+id/bt_login"/>
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Cancel"
-                android:elevation="@dimen/gap_4dp"/>
+                android:text="@string/cancel" />
         </android.support.v7.widget.LinearLayoutCompat>
     </LinearLayout>
 </FrameLayout>

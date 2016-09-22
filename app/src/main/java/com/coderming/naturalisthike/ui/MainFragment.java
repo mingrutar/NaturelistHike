@@ -88,11 +88,9 @@ public class MainFragment extends Fragment implements LoaderManager.LoaderCallba
     // carpool
     @BindView(R.id.meeting_time) TextView tvMeetingTime;
     @BindView(R.id.meeting_place) TextView tvMeetingPlace;
-    @BindView(R.id.num_car_mate) TextView tvNumCarMates;
     @BindView(R.id.at_trail_head) TextView tvTimeToTH;
 
     // checklist
-    @BindView(R.id.num_todos) TextView tvNumToDos;
     // reminder
     @BindView(R.id.reminder_time) TextView tvReminderTime;
     @BindView(R.id.reminder_switch) SwitchCompat mRemindSwitch;
