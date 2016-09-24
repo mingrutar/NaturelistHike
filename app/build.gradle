@@ -8,10 +8,10 @@ keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
 android {
     signingConfigs {
         config {
-            keyAlias 'capstonekey'
-            keyPassword 'P@ssw0rd'
-            storeFile file('app/keystore/capstone.jks')
-            storePassword 'P@ssw0rd'
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
+            storeFile file(keystoreProperties['storeFile'])
+            storePassword keystoreProperties['storePassword']
         }
     }
     compileSdkVersion 24
