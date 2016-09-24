@@ -65,7 +65,7 @@
     <string name="cd_days_prior_trip_for_a_reminder">days prior trip for a reminder</string>
     <string name="cd_in_days">in days</string>
     <string name="tap_your_home_location_on_the_map">Tap your home location on the map</string>
-    <string name="enter_reminder_days_default_i_day_earlier">Enter reminder days, default i day earlier</string>
+    <string name="enter_reminder_days_default_i_day_earlier">Enter reminder days, default 1 day earlier</string>
     <string name="enter_preparation_time_default_45_min">Enter preparation time, default 45 min</string>
     <string name="minutes">minutes</string>
     <string name="days">days</string>

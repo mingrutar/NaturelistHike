@@ -39,10 +39,10 @@ public class NaturalistHikeWedgetService extends IntentService implements DataCo
     @Override
     protected void onHandleIntent(Intent intent) {
         AppWidgetManager appWidgetManager = AppWidgetManager.getInstance(this);
-        int[] appWidgetIds = appWidgetManager.getAppWidgetIds(new ComponentName(this, NaturalistHikeWidget.class));
+        int[] appWidgetIds = appWidgetManager.getAppWidgetIds(new ComponentName(this, NaturalistHikeWidgetProvider.class));
         Calendar now = Calendar.getInstance();
         Cursor cursor = getContentResolver().query(TripContract.TripEntry.CONTENT_URI, sQueryProjection,
-                TripContract.TripEntry.COLUMN_HIKE_DATE + QueryAsc, new String[]{Long.toString(now.getTimeInMillis())},
+                TripContract.TripEntry.COLUMN_HIKE_DATE + QueryGE, new String[]{Long.toString(now.getTimeInMillis())},
                 null, null);
         if (cursor == null) {
             Log.w(LOG_TAG, String.format("+-+- #appWidgetId=%d, #date=null", appWidgetIds.length));
@@ -59,16 +59,21 @@ public class NaturalistHikeWedgetService extends IntentService implements DataCo
             int layoutId;
             RemoteViews views = new RemoteViews(getPackageName(), R.layout.naturalist_hike_widget);
 
-            views.setTextViewText(R.id.widget_name_text, cursor.getString(COL_HIKE_NAME));
+            String hikeName = cursor.getString(COL_HIKE_NAME);
+            views.setTextViewText(R.id.widget_name_text, hikeName);
             long date = cursor.getLong(COL_HIKE_DATE);
-            views.setTextViewText(R.id.widget_date, Utility.formatDateOnly(date));
+            String dateStr = Utility.formatDateOnly(date);
+            Log.v(LOG_TAG, String.format("+-+- appWidgetId=%d, hikeNmae=%s, date=%s", appWidgetId, hikeName, dateStr));
+            views.setTextViewText(R.id.widget_date, dateStr);
 
             // Create an Intent to launch MainActivity
             Intent launchIntent = new Intent(this, MainActivity.class);
-            PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, launchIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+            launchIntent.setAction(AppWidgetManager.ACTION_APPWIDGET_UPDATE);
+            PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, launchIntent, 0);
             views.setOnClickPendingIntent(R.id.nh_widget, pendingIntent);
             // Tell the AppWidgetManager to perform an update on the current app widget
             appWidgetManager.updateAppWidget(appWidgetId, views);
         }
+        cursor.close();
     }
 }

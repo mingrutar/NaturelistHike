@@ -107,7 +107,10 @@
                 android:value=".ui.MainActivity"/>
         </activity>
 
-        <receiver android:name=".widget.NaturalistHikeWidget">
+        // widget
+        <receiver
+            android:name=".widget.NaturalistHikeWidgetProvider"
+            android:label="@string/widget_label" >
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
             </intent-filter>
@@ -115,18 +118,6 @@
             <meta-data
                 android:name="android.appwidget.provider"
                 android:resource="@xml/naturalist_hike_widget_info"/>
-        </receiver>
-
-        // widget
-        <receiver
-            android:name=".widget.NaturalistHikeWidget"
-            android:label="@string/widget_label" >
-            <intent-filter>
-                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-                <action android:name="com.example.android.sunshine.app.ACTION_DATA_UPDATED" />
-            </intent-filter>
-            <meta-data android:name="android.appwidget.provider"
-                       android:resource="@xml/naturalist_hike_widget_info" />
         </receiver>
         <service
             android:name=".widget.NaturalistHikeWedgetService"

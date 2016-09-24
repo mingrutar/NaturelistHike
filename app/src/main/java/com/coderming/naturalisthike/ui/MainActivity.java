@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity
     ViewPager mViewPager;
 
     // TODO: hardcoded for now
-    static int[] sBackDropImages = new int[] {R.drawable.carkeek, R.drawable.teanaway, R.drawable.rainier};
+    static int[] sBackDropImages = new int[] {R.drawable.rainier, R.drawable.carkeek, R.drawable.teanaway};
     Cursor mCursor;
     MainPagerAdapter mAdapter;
     CollapsingToolbarLayout mCollapsingToolbar;
@@ -98,6 +98,7 @@ public class MainActivity extends AppCompatActivity
         float homeLon = pref.getFloat(Constants.KEY_PREF_HOME_ADDRESS_LON, -1.0f);
         return (homeLan != -1.0f) && (homeLon != 1.0f);
     }
+
     @Override
     protected void onStart() {
         super.onStart();
