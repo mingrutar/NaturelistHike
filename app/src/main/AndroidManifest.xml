@@ -16,6 +16,7 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key"/>
+
         <activity
             android:name=".ui.MainActivity"
             android:label="@string/app_name"
@@ -93,17 +94,45 @@
             </intent-filter>
         </receiver>
 
-
         <service
             android:name=".service.DataRetrieverService"
             android:exported="false">
         </service>
 
-        <activity android:name=".ui.SetupPersonalInfoActivity"
+        <activity
+            android:name=".ui.SetupPersonalInfoActivity"
             android:parentActivityName=".ui.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ui.MainActivity"/>
         </activity>
+
+        <receiver android:name=".widget.NaturalistHikeWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/naturalist_hike_widget_info"/>
+        </receiver>
+
+        // widget
+        <receiver
+            android:name=".widget.NaturalistHikeWidget"
+            android:label="@string/widget_label" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.example.android.sunshine.app.ACTION_DATA_UPDATED" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider"
+                       android:resource="@xml/naturalist_hike_widget_info" />
+        </receiver>
+        <service
+            android:name=".widget.NaturalistHikeWedgetService"
+            android:exported="false">
+        </service>
+
     </application>
+
 </manifest>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:initialKeyguardLayout="@layout/naturalist_hike_widget"
+                    android:initialLayout="@layout/naturalist_hike_widget"
+                    android:minHeight="@dimen/widget_default_height"
+                    android:minWidth="@dimen/widget_default_width"
+                    android:minResizeHeight="@dimen/widget_min_resize_height"
+                    android:minResizeWidth="@dimen/widget_min_resize_width"
+                    android:previewImage="@drawable/example_appwidget_preview"
+                    android:resizeMode="none"
+                    android:updatePeriodMillis="0"
+                    android:widgetCategory="home_screen"
+    tools:ignore="UnusedAttribute">
+</appwidget-provider>

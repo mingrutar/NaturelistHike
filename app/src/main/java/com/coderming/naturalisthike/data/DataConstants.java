@@ -1,6 +1,6 @@
 package com.coderming.naturalisthike.data;
 
-interface DataConstants  {
+public interface DataConstants  {
     static final String UriSS = "%s/%s";
     static final String UriSAny = "%s/*";
     static final String UriSSAny = "%s/%s/*";

@@ -121,4 +121,9 @@
     <string name="cd_family_name">family name</string>
     <string name="cd_favorite_icon">favorite icon</string>
     <string name="meeting_place_option">meeting place option</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="widget_trip_title">trip title</string>
+    <string name="cd_on">On</string>
+    <string name="widget_label">Next Naturalist Hike</string>
 </resources>

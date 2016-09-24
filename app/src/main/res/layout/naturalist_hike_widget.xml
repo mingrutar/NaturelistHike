@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="@dimen/widget_default_width"
+              android:layout_height="@dimen/widget_default_height"
+              android:background="@color/widgetBGColor"
+              android:orientation="vertical"
+              android:id="@+id/nh_widget"
+                android:padding="@dimen/widget_margin">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gap_8dp"
+        android:layout_marginLeft="@dimen/gap_8dp"
+        android:layout_marginRight="@dimen/gap_8dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="@dimen/small_icon_size"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/title_text_size"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginStart="@dimen/gap_4dp"
+            android:layout_marginLeft="@dimen/gap_4dp"
+            android:text="@string/app_label"/>
+    </LinearLayout>
+    <View android:layout_width="match_parent"
+          android:layout_height="@dimen/gap_2dp"
+          android:layout_marginRight="@dimen/gap_4dp"
+          android:layout_marginLeft="@dimen/gap_4dp"
+          android:layout_marginBottom="@dimen/gap_8dp"
+          android:background="@color/colorPrimary" />
+    <TextView
+        android:id="@+id/widget_name_text"
+        style="@style/EmBodyText"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/gap_4dp"
+        android:contentDescription="@string/widget_trip_title"
+        android:text="Carkeek "
+        android:textColor="@color/colorPrimaryText" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/gap_4dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/SmallText"
+            android:contentDescription="@string/cd_on"
+            android:text="@string/cd_on"
+            android:textColor="@color/colorSecondaryText" />
+        <TextView
+            style="@style/BodyText"
+            android:layout_marginStart="@dimen/gap_4dp"
+            android:layout_marginLeft="@dimen/gap_4dp"
+            android:id="@+id/widget_date"
+            android:contentDescription="@string/widget_trip_title"
+            android:textColor="@color/colorSecondaryText"
+            android:text="September 25, 2016"      />
+    </LinearLayout>
+</LinearLayout>

@@ -22,4 +22,5 @@
     <color name="grey">#EDEEEF</color>
     <color name="dark_grey">#AEAEAE</color>
 
+    <color name="widgetBGColor">#f1eacd</color>
 </resources>
