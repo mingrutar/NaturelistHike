@@ -4,6 +4,15 @@
 This app is naturalist hikers' assistant. It helps hikers prepare for the hike, assists hikers during hiking and helps hikers reviewing their observation. However, the capstone project focuses on pre-trip preparation. See details of capstone project in the document.   
   https://github.com/mingrutar/Capstone-Project/blob/master/documents/Capstone_Stage1.pdf
 
+### Run the app ###
+1) obtain an API key from Google Maps
+2) create a resource file name 'google_maps_api.xml' under app/src/debug/res/values
+3) replace the string "YOUR GOOGLE MAPS KEY" with your key.
+  <resources>
+    <string name="google_maps_key" translatable="false" templateMergeStrategy="preserve">
+    YOUR GOOGLE MAPS KEY
+    </string>
+</resources>
 #### The screenshots and explanation ####
 Setup after installation, one time only. The user defines the days prior the trip for a trip reminder, the preparation time before leaving the house on the hiking day.
 

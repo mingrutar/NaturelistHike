@@ -1,6 +1,7 @@
-1) favority button not respond to 2nd click
-2) make EditText of SetupPersonal not focus, the Number pad is annoy.
+1) FIXED - favority button not respond to 2nd click
+2) FIXED make EditText of SetupPersonal not focus, the Number pad is annoy.
 
 ToDO:
 1) multi map for tablet
 2) add 'start hike' menu item to plant list fragment
+3) more inline TODOs.
