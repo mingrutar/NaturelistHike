@@ -13,7 +13,7 @@ This app is naturalist hikers' assistant. It helps hikers prepare for the hike, 
     YOUR GOOGLE MAPS KEY
     </string>
 </resources>
-#### The screenshots and explanation ####
+### The screenshots and explanation ###
 Setup after installation, one time only. The user defines the days prior the trip for a trip reminder, the preparation time before leaving the house on the hiking day.
 
 ![setup](https://github.com/mingrutar/Capstone-Project/blob/master/screenshoots/setup_my_location.png?raw=true)
