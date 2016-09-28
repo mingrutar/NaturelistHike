@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity
     ViewPager mViewPager;
 
     // TODO: hardcoded for now
-    static int[] sBackDropImages = new int[] {R.drawable.rainier, R.drawable.carkeek, R.drawable.teanaway};
+    static int[] sBackDropImages = new int[] {R.drawable.rainier, R.drawable.teanaway, R.drawable.carkeek};
     Cursor mCursor;
     MainPagerAdapter mAdapter;
     CollapsingToolbarLayout mCollapsingToolbar;
