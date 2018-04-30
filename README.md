@@ -1,7 +1,31 @@
 ### Capstone Project ###
 
 ### Project Description ###
-This app is naturalist hikers' assistant. It helps hikers prepare for the hike, assists hikers during hiking and helps hikers reviewing their observation. However, the capstone project focuses on pre-trip preparation. See details of capstone project in the document.   
+This app is naturalist hikers' assistant. It helps hikers prepare for the hike, assists hikers during hiking and helps hikers reviewing their observation. However, the capstone project focuses on pre-trip preparation. 
+
+
+|  |  |  |  |  |
+|:-----|:-----|:-----|:-----|:-----|
+| ![](screenshoots/setup_my_location.png) | ![](screenshoots/current_trip.png) | ![](screenshoots/trip_detail.png) | ![](screenshoots/plant_list.png) | ![](screenshoots/meetat_user_defined.png) |
+| Setup my location | The home page<br> shows the upcoming trip | The trip details | The plants I am interested<br>to see at this trip | The meet up places |
+| ![](screenshoots/plant_detail_fav.png) | ![](screenshoots/plant_list_on_hike.png) | ![](screenshoots/future_trip.png) |![](screenshoots/weather.png) | |
+| A detail description<br> about a plant | During the hike, I <br>can mark the plant <br>when I saw it and take <br>photos if I like | The list of future trips | The weather report of<br>the hiking day | |
+
+<a id="watchface"></a>
+### [Weather 4 WatchFace](https://github.com/mingrutar/WatchFace)
+Android watch face app that shows weather info. The watch face couples with Sunshine phone app. Features:
+* The background color of watch face could be changed at app. 
+* The temperature could be displayed in metric or imperial. 
+* The Sunshine app fetches weather info periodically and update the watch after sync. 
+* The display of watch face has normal, ambient and low-energy modes, see screenshots. 
+* Tapping watch face 2 times launches Sunshine app at phone.
+
+|  |  |  |  |  |
+|:-----:|:-----:|:-----:|:-----:|:-----:|
+| ![](images/green_clear.png) | ![](images/blue_snow.png) | ![](images/ambient.png) | ![](images/save_mode.png) | ![](images/no_weatherInfo.png) |
+| connected to phone<br>*round face* | blue background<br>*round face* | ambient mode<br>*round face* | save mode<br>*square face* | no weather info<br>*square face* |
+
+See details of capstone project in the document.   
   https://github.com/mingrutar/Capstone-Project/blob/master/documents/Capstone_Stage1.pdf
 
 ### Run the app ###
