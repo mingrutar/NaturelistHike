@@ -1,4 +1,4 @@
-### Capstone Project ###
+### Naturalist Hiker's assistent / Capstone Project ###
 
 ### Project Description ###
 This app is naturalist hikers' assistant. It helps hikers prepare for the hike, assists hikers during hiking and helps hikers reviewing their observation. However, the capstone project focuses on pre-trip preparation. 
